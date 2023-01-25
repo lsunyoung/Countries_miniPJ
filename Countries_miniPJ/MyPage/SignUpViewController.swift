@@ -32,6 +32,9 @@ class SignUpViewController: UIViewController {
         BirthTextfield.placeholder = "생년월일 입력"
         ButtonEnable()
     }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true) //키보드 내림
+    }
     private func ButtonEnable() { //필드 입력 시 로그인 버튼 enable
         self.IDTextfield.addAction(UIAction(handler: { _ in
             if self.IDTextfield.text?.isEmpty == true {
