@@ -43,8 +43,17 @@ class CXMainTableViewController: UITableViewController {
         searchBar.delegate = self
         self.title = "나라 정보"
 
+        self.tableView.keyboardDismissMode = .onDrag //스크롤 시 키보드 내림
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap(sender:)))) //화면 터치 시 키보드 내림
         
         search(with: "", page: page, total: totalPage)
+    }
+    
+    @objc func handleTap(sender: UITapGestureRecognizer) { //화면 터치 시 키보드 내림
+        if sender.state == .ended {
+            view.endEditing(true)
+        }
+        sender.cancelsTouchesInView = false
     }
     
     func search(with query:String?, page:Int, total:Int) {
