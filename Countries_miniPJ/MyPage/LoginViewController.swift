@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     
     var lblLogin:UILabel?
     var lblMy:UILabel?
@@ -28,14 +28,24 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        textField1.placeholder = "아이디"
-        textField2.placeholder = "비밀번호"
+        textField()
         
         ButtonEnable()
         setPasswordShowButton()
+        textField1.delegate = self
+        textField2.delegate = self
+    }
+    func textField() {
+        textField1.placeholder = "아이디"
+        textField2.placeholder = "비밀번호"
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true) //키보드 내림
+        self.view.endEditing(true) //화면 터치 시 키보드 내림
+    }
+    func textFieldReturn(_textField: UITextField) -> Bool { //수정해야함
+        textField1.resignFirstResponder()
+        textField2.resignFirstResponder()
+        return true
     }
     
     private func ButtonEnable() { //필드 입력 시 로그인 버튼 enable

@@ -1260,7 +1260,7 @@
             </objects>
             <point key="canvasLocation" x="650.76923076923072" y="2095.7345971563982"/>
         </scene>
-        <!--Sign Up View Controller-->
+        <!--회원가입-->
         <scene sceneID="did-VH-LFa">
             <objects>
                 <viewController id="cSf-YP-iM6" customClass="SignUpViewController" customModule="Countries_miniPJ" customModuleProvider="target" sceneMemberID="viewController">
@@ -1268,36 +1268,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="회원가입" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3m-4H-ChL">
-                                <rect key="frame" x="154" y="139" width="87" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ihj-Ll-6b3">
-                                <rect key="frame" x="72" y="200" width="153" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="acm-gc-xYn">
-                                <rect key="frame" x="72" y="242" width="246" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NKT-ac-Zno">
-                                <rect key="frame" x="72" y="284" width="246" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbe-Lz-NdH">
-                                <rect key="frame" x="154" y="537" width="83" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbe-Lz-NdH">
+                                <rect key="frame" x="154" y="805" width="83" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="회원가입">
+                                <buttonConfiguration key="configuration" style="plain" title="가입하기">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
@@ -1307,58 +1281,378 @@
                                     <action selector="actSignUp:" destination="cSf-YP-iM6" eventType="touchUpInside" id="cUh-ZK-JHX"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="owE-eC-xBX">
-                                <rect key="frame" x="72" y="326" width="120" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uhf-fT-7ju">
-                                <rect key="frame" x="198" y="326" width="120" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yCe-cf-ktV">
-                                <rect key="frame" x="72" y="368" width="246" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hq2-J4-hgi" customClass="SignUpCheckBox" customModule="Countries_miniPJ" customModuleProvider="target">
-                                <rect key="frame" x="64" y="432" width="49" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="square" catalog="system">
-                                    <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="회원가입 동의하시겠습니까?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQT-Gg-LVo">
-                                <rect key="frame" x="111" y="439" width="190" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Khy-kE-fit">
-                                <rect key="frame" x="230" y="200" width="88" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="중복 확인">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </backgroundConfiguration>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="actOverlab:" destination="cSf-YP-iM6" eventType="touchUpInside" id="Z55-Hd-qlk"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="NuC-Sk-dHM">
+                                <rect key="frame" x="43" y="651" width="300" height="134"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W4y-3P-jiZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="34"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hq2-J4-hgi" customClass="SignUpCheckBox" customModule="Countries_miniPJ" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="HHa-YK-dL6"/>
+                                                    <constraint firstAttribute="width" constant="300" id="md0-fN-k62"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title=" 전체 동의하기" image="square" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="actAgreeCheck:" destination="cSf-YP-iM6" eventType="touchUpInside" id="VR0-Yz-fOz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="9gM-ra-fJl">
+                                        <rect key="frame" x="0.0" y="39" width="268.33333333333331" height="95"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cim-F4-YD9">
+                                                <rect key="frame" x="0.0" y="0.0" width="216" height="29.666666666666668"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="checkmark" catalog="system" subtitle="[필수] 개인정보 수집 및 이용 동의">
+                                                    <color key="baseForegroundColor" systemColor="systemGray2Color"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="actAgreeCheck:" destination="cSf-YP-iM6" eventType="touchUpInside" id="nPw-Ek-Zhp"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhn-50-EDZ">
+                                                <rect key="frame" x="0.0" y="32.666666666666629" width="164" height="29.666666666666671"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="checkmark" catalog="system" subtitle="[필수] 서비스 이용 약관">
+                                                    <color key="baseForegroundColor" systemColor="systemGray2Color"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="actAgreeCheck:" destination="cSf-YP-iM6" eventType="touchUpInside" id="JTk-Tw-LV2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBg-5w-ydc">
+                                                <rect key="frame" x="0.0" y="65.333333333333371" width="268.33333333333331" height="29.666666666666671"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="checkmark" catalog="system" subtitle="[선택] 마케팅 활용 및 광고성 정보 수신 동의">
+                                                    <color key="baseForegroundColor" systemColor="systemGray2Color"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="actAgreeCheck:" destination="cSf-YP-iM6" eventType="touchUpInside" id="DkZ-gk-gW8"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Uje-eb-aqL">
+                                <rect key="frame" x="42" y="121" width="305" height="500"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aiN-WW-LdS">
+                                        <rect key="frame" x="0.0" y="0.0" width="305" height="59.666666666666664"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gIc-oL-pQh">
+                                                <rect key="frame" x="0.0" y="0.0" width="305" height="34.666666666666664"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ihj-Ll-6b3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="210" height="34.666666666666664"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="34.5" id="fb6-wS-cLC"/>
+                                                            <constraint firstAttribute="width" constant="210" id="psz-cz-gsj"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <action selector="IdTextFieldTyped:" destination="cSf-YP-iM6" eventType="editingChanged" id="2hY-Vd-6Pi"/>
+                                                            <action selector="IdTextFieldTyped:" destination="cSf-YP-iM6" eventType="editingDidBegin" id="3GF-VL-hXm"/>
+                                                            <action selector="IdTextFieldTyped:" destination="cSf-YP-iM6" eventType="editingDidEnd" id="Ozi-vD-a71"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Khy-kE-fit">
+                                                        <rect key="frame" x="218" y="0.0" width="87" height="34.666666666666664"/>
+                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="중복확인">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="actOverlab:" destination="cSf-YP-iM6" eventType="touchUpInside" id="Z55-Hd-qlk"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 아이디가 입력되지 않았습니다." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EN7-y3-mh2">
+                                                <rect key="frame" x="0.0" y="34.666666666666657" width="305" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="H97-ln-YO8"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PWq-ME-Kpm">
+                                        <rect key="frame" x="0.0" y="71.666666666666657" width="305" height="59"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="acm-gc-xYn">
+                                                <rect key="frame" x="0.0" y="0.0" width="305" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="PwTextFieldTyped:" destination="cSf-YP-iM6" eventType="editingChanged" id="3K5-dx-fpV"/>
+                                                    <action selector="PwTextFieldTyped:" destination="cSf-YP-iM6" eventType="editingDidEnd" id="51Y-da-ZtX"/>
+                                                    <action selector="PwTextFieldTyped:" destination="cSf-YP-iM6" eventType="editingDidBegin" id="KzF-wD-azk"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 비밀번호가 입력되지 않았습니다." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWT-FI-a6Y">
+                                                <rect key="frame" x="0.0" y="34" width="305" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="HTg-J7-stR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sLr-eI-DIy">
+                                        <rect key="frame" x="0.0" y="142.66666666666669" width="305" height="59"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NKT-ac-Zno">
+                                                <rect key="frame" x="0.0" y="0.0" width="305" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="RPwTextFieldTyped:" destination="cSf-YP-iM6" eventType="editingDidEnd" id="Cca-Vc-3UX"/>
+                                                    <action selector="RPwTextFieldTyped:" destination="cSf-YP-iM6" eventType="editingDidBegin" id="ffm-Dz-XnM"/>
+                                                    <action selector="RPwTextFieldTyped:" destination="cSf-YP-iM6" eventType="editingChanged" id="moI-uU-xoA"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 비밀번호가 일치하지 않습니다." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UcC-gK-5z8">
+                                                <rect key="frame" x="0.0" y="34" width="305" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="9xi-WS-3cr"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ruf-RG-EX3">
+                                        <rect key="frame" x="0.0" y="213.66666666666669" width="305" height="59"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2wl-eS-qOb">
+                                                <rect key="frame" x="0.0" y="0.0" width="305" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="MailTextFieldTyped:" destination="cSf-YP-iM6" eventType="editingDidBegin" id="DXA-wM-eUv"/>
+                                                    <action selector="MailTextFieldTyped:" destination="cSf-YP-iM6" eventType="editingChanged" id="hOD-zM-Fr6"/>
+                                                    <action selector="MailTextFieldTyped:" destination="cSf-YP-iM6" eventType="editingDidEnd" id="v8q-Le-2tb"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 올바르지 않은 이메일 형식입니다." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKF-34-Qol" userLabel="올바르지 않은 이메일 형식입니다.">
+                                                <rect key="frame" x="0.0" y="34" width="305" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="c75-dG-3d2"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JTE-hu-3n0">
+                                        <rect key="frame" x="0.0" y="284.66666666666669" width="305" height="59.333333333333314"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TjT-8H-riw">
+                                                <rect key="frame" x="0.0" y="0.0" width="305" height="34.333333333333336"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="45K-Kn-UKu">
+                                                        <rect key="frame" x="0.0" y="0.0" width="230" height="34.333333333333336"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="230" id="k6v-tZ-nZQ"/>
+                                                            <constraint firstAttribute="height" constant="34.5" id="mRv-4R-nHe"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <action selector="PhoneTextFieldTyped:" destination="cSf-YP-iM6" eventType="editingDidEnd" id="4YI-7i-fkg"/>
+                                                            <action selector="PhoneTextFieldTyped:" destination="cSf-YP-iM6" eventType="editingChanged" id="FMx-SU-FZF"/>
+                                                            <action selector="PhoneTextFieldTyped:" destination="cSf-YP-iM6" eventType="editingDidBegin" id="k8S-rw-3ES"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m95-Ni-Bpq">
+                                                        <rect key="frame" x="238" y="0.0" width="67" height="34.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="전송">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="actCertified:" destination="cSf-YP-iM6" eventType="touchUpInside" id="vHG-Dj-FL9"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="휴대폰 번호가 입력되지 않았습니다." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3eP-al-Ste" userLabel="올바르지 않은 이메일 형식입니다.">
+                                                <rect key="frame" x="0.0" y="34.333333333333314" width="305" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="HYf-h8-7wy"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ebh-GR-NEv">
+                                        <rect key="frame" x="0.0" y="356" width="305" height="59.666666666666686"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Xdm-XP-HIK">
+                                                <rect key="frame" x="0.0" y="0.0" width="305" height="34.666666666666664"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gzp-Fi-iq9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="230" height="34.666666666666664"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="34.5" id="Loo-ok-ZJe"/>
+                                                            <constraint firstAttribute="width" constant="230" id="Vna-Da-Can"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <action selector="CertifiedTextFieldTyped:" destination="cSf-YP-iM6" eventType="editingDidBegin" id="TZg-Yu-8PW"/>
+                                                            <action selector="CertifiedTextFieldTyped:" destination="cSf-YP-iM6" eventType="editingChanged" id="edv-5P-dpJ"/>
+                                                            <action selector="CertifiedTextFieldTyped:" destination="cSf-YP-iM6" eventType="editingDidEnd" id="lqW-Iy-BIj"/>
+                                                            <action selector="PhoneTextFieldTyped:" destination="cSf-YP-iM6" eventType="editingDidEnd" id="U7E-vy-zI0"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHd-CS-xIN">
+                                                        <rect key="frame" x="238" y="0.0" width="67" height="34.666666666666664"/>
+                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="인증">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="actCkeck:" destination="cSf-YP-iM6" eventType="touchUpInside" id="EL5-Mh-bbn"/>
+                                                            <action selector="actCkeck:" destination="cSf-YP-iM6" eventType="editingChanged" id="a9c-WU-OIo"/>
+                                                            <action selector="actCkeck:" destination="cSf-YP-iM6" eventType="editingDidBegin" id="cQT-CF-mzs"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="인증번호를 입력해주세요" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvS-sX-s1c" userLabel="올바르지 않은 이메일 형식입니다.">
+                                                <rect key="frame" x="0.0" y="34.666666666666686" width="305" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="PfV-ez-oQE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="v7W-1W-odj">
+                                        <rect key="frame" x="0.0" y="427.66666666666663" width="305" height="34"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="owE-eC-xBX">
+                                                <rect key="frame" x="0.0" y="0.0" width="148" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="148" id="Km1-9X-HCx"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uhf-fT-7ju">
+                                                <rect key="frame" x="157" y="0.0" width="148" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="148" id="cZH-Xr-4nZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-28" translatesAutoresizingMaskIntoConstraints="NO" id="6n8-NV-czn">
+                                        <rect key="frame" x="0.0" y="473.66666666666663" width="305" height="26.333333333333314"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLt-hK-j0f">
+                                                <rect key="frame" x="0.0" y="0.0" width="305" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="2ub-6N-1Cf"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" subtitle="생년월일">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </backgroundConfiguration>
+                                                    <color key="baseForegroundColor" systemColor="systemGray4Color"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="actBirthday:" destination="cSf-YP-iM6" eventType="touchUpInside" id="cy8-xH-Cpb"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="FZF-J2-hnn">
+                                                <rect key="frame" x="0.0" y="5.9999999999999982" width="305" height="20.333333333333329"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="년" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvN-jZ-eXf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="179" height="20.333333333333332"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="179" id="WGy-2N-zup"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" systemColor="systemGray4Color"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="월" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sR5-9f-8i5">
+                                                        <rect key="frame" x="181" y="0.0" width="50" height="20.333333333333332"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="qyT-6m-Hwz"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" systemColor="systemGray4Color"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="일" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsi-AH-U5K">
+                                                        <rect key="frame" x="233" y="0.0" width="50" height="20.333333333333332"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="U7J-iC-wAr"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" systemColor="systemGray4Color"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRI-mP-mZ5">
+                                                        <rect key="frame" x="285" y="0.0" width="20" height="20.333333333333332"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="4Oc-iT-125"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1Jp-tU-D5D"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="Uje-eb-aqL" firstAttribute="leading" secondItem="1Jp-tU-D5D" secondAttribute="leading" constant="42" id="1S1-6x-EAq"/>
+                            <constraint firstItem="Tbe-Lz-NdH" firstAttribute="leading" secondItem="1Jp-tU-D5D" secondAttribute="leading" constant="154" id="5mC-AO-gi1"/>
+                            <constraint firstItem="NuC-Sk-dHM" firstAttribute="leading" secondItem="1Jp-tU-D5D" secondAttribute="leading" constant="43" id="Eip-Am-xDu"/>
+                            <constraint firstItem="Tbe-Lz-NdH" firstAttribute="top" secondItem="NuC-Sk-dHM" secondAttribute="bottom" constant="20" id="Srj-IV-3af"/>
+                            <constraint firstItem="NuC-Sk-dHM" firstAttribute="top" secondItem="Uje-eb-aqL" secondAttribute="bottom" constant="30" id="hYv-2w-okh"/>
+                            <constraint firstItem="Uje-eb-aqL" firstAttribute="top" secondItem="1Jp-tU-D5D" secondAttribute="top" constant="30" id="n5T-CJ-pt3"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="iUr-ug-nfn">
+                    <navigationItem key="navigationItem" title="회원가입" id="iUr-ug-nfn">
                         <barButtonItem key="leftBarButtonItem" image="chevron.backward.circle" catalog="system" id="59G-9B-J7L">
                             <color key="tintColor" systemColor="labelColor"/>
                             <connections>
@@ -1367,13 +1661,28 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="BirthTextfield" destination="yCe-cf-ktV" id="Tdt-jK-fYO"/>
+                        <outlet property="BirthdayButton" destination="xLt-hK-j0f" id="72O-2a-EKy"/>
+                        <outlet property="CertifiedCheckButton" destination="bHd-CS-xIN" id="ktO-nk-9fe"/>
+                        <outlet property="CertifiedTextDescription" destination="nvS-sX-s1c" id="MGP-ic-Zxu"/>
+                        <outlet property="CertifiedTextfield" destination="Gzp-Fi-iq9" id="Vez-Nb-HPQ"/>
+                        <outlet property="CheckBox" destination="Hq2-J4-hgi" id="8ba-Z6-u67"/>
+                        <outlet property="CheckButton1" destination="cim-F4-YD9" id="S7R-OY-giy"/>
+                        <outlet property="CheckButton2" destination="zhn-50-EDZ" id="WeO-mE-GQU"/>
+                        <outlet property="CheckButton3" destination="SBg-5w-ydc" id="mdQ-4l-k7x"/>
+                        <outlet property="IDTextDescription" destination="EN7-y3-mh2" id="h1l-sw-6BM"/>
                         <outlet property="IDTextfield" destination="Ihj-Ll-6b3" id="Quw-Ns-TBn"/>
+                        <outlet property="MailTextDescription" destination="QKF-34-Qol" id="Chs-a2-cfc"/>
+                        <outlet property="MailTextfield" destination="2wl-eS-qOb" id="WCc-lr-TOx"/>
                         <outlet property="NameTextfield" destination="owE-eC-xBX" id="1iS-aD-bvh"/>
                         <outlet property="NickTextfield" destination="uhf-fT-7ju" id="606-W4-qy0"/>
+                        <outlet property="OverlapButton" destination="Khy-kE-fit" id="c92-Vu-k2a"/>
+                        <outlet property="PWTextDescription" destination="pWT-FI-a6Y" id="SFO-nJ-IG7"/>
                         <outlet property="PWTextfield" destination="acm-gc-xYn" id="XQn-hf-gOv"/>
+                        <outlet property="PhoneTextDescription" destination="3eP-al-Ste" id="bXG-NG-znT"/>
+                        <outlet property="PhoneTextfield" destination="45K-Kn-UKu" id="Vxf-7J-zDS"/>
+                        <outlet property="RPWTextDescription" destination="UcC-gK-5z8" id="vw2-83-e6u"/>
                         <outlet property="RPWTextfield" destination="NKT-ac-Zno" id="Wab-yQ-IH7"/>
-                        <outlet property="chackBox" destination="Hq2-J4-hgi" id="JdZ-nP-XKJ"/>
+                        <outlet property="SendButton" destination="m95-Ni-Bpq" id="JNZ-SI-D7w"/>
                         <outlet property="signupButton" destination="Tbe-Lz-NdH" id="XVK-2d-sJD"/>
                     </connections>
                 </viewController>
@@ -1530,6 +1839,7 @@
         <image name="bolt.car.fill" catalog="system" width="128" height="95"/>
         <image name="bubble.right" catalog="system" width="128" height="110"/>
         <image name="calendar" catalog="system" width="128" height="107"/>
+        <image name="checkmark" catalog="system" width="128" height="114"/>
         <image name="chevron.backward.circle" catalog="system" width="128" height="123"/>
         <image name="globe.asia.australia.fill" catalog="system" width="128" height="123"/>
         <image name="headphones" catalog="system" width="128" height="121"/>
@@ -1567,6 +1877,9 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
