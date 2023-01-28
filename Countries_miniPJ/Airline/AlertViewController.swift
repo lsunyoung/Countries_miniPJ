@@ -54,7 +54,9 @@ class AlertViewController: UIViewController {
         dateDD()
         Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(update), userInfo: nil, repeats: true)
         
-        // date 최소/최대 날짜 설정
+        minDate()
+    }
+    func minDate() { // date 최소/최대 날짜 설정
         let calendar = Calendar(identifier: .gregorian)
         let currentDate = Date()
         var componenets = DateComponents()
@@ -100,7 +102,7 @@ class AlertViewController: UIViewController {
         }
     }
     
-    @IBAction func actPickerDate(_ sender: UIButton) {
+    @IBAction func actPickerDate(_ sender: UIButton) { //날짜 Date피커뷰
         let alert = UIAlertController(title: "날짜 선택", message: "\n\n\n\n\n\n\n\n\n", preferredStyle: .actionSheet)
         let action1 = UIAlertAction(title: "취소", style: .cancel) { _ in
 //            self.pickerView.selectedRow(inComponent: 0)
@@ -180,7 +182,7 @@ class AlertViewController: UIViewController {
         present(alert, animated: true)
     }
     
-    @IBAction func actAdult(_ sender: UIStepper) {
+    @IBAction func actAdult(_ sender: UIStepper) { //사람 수 선택
         lbladultInt.text = "\(Int(sender.value).description)명"
         lblAdult.text = "\(Int(sender.value).description)명"
         stepperAdult.maximumValue = sum
@@ -208,7 +210,7 @@ class AlertViewController: UIViewController {
     }
     
     
-    @IBAction func actSeat(_ sender: Any) {
+    @IBAction func actSeat(_ sender: Any) { //좌석 선택
         let alert = UIAlertController(title: "좌석등급", message: "선택하세요.", preferredStyle: .actionSheet)
         let action1 = UIAlertAction(title: "일반석", style: .default) { _ in
             self.lblSeat.text = "일반석"
@@ -261,8 +263,8 @@ class AlertViewController: UIViewController {
     }
 }
 
-
-//extension AlertViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+// 피커뷰
+//extension AlertViewController: UIPickerViewDataSource, UIPickerViewDelegate {
 //    func numberOfComponents(in pickerView: UIPickerView) -> Int {
 //        return 3
 //    }

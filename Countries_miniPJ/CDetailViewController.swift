@@ -12,7 +12,6 @@ class CDetailViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblDetail: UILabel!
-    @IBOutlet weak var textView: UITextView!
     
     ////XML
     //    var country:[String:String]?
@@ -26,28 +25,23 @@ class CDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        indexImageAndLabel()
+    }
+    func indexImageAndLabel() {
         if let country = country {
             lblName.text = "\(country.countryName)(\(country.countryEnName))"
             lblDetail.text = country.continent
-            
-            
-//            textView.text = country.basic.htmlEscaped
-            print(String(htmlEncodedString: country.basic)!)
-//            print(country.basic.components(separatedBy: ["&lt;div&gt;","&lt;br&gt;&#xD;","&lt;p style=&quot;margin-left: 20px; margin-right: 20px;&quot;&gt;","&#xD;"]).joined())
         }
         if let flag = flag {
             imageView.image = UIImage(named: flag)
         }
+        
+        imageView.layer.cornerRadius = imageView.frame.width/8 //모서리 라운드처리
+        imageView.clipsToBounds = true
+        imageView.layer.borderColor = UIColor.clear.cgColor  //원형 이미지의 테두리 제거
+    }
 
-//        if let country = country {
-//            textView.text = country["basic"]
-//            lblDatil.text = country["basic"]
-//        }
-    }
-    public func configureCell(imageURL: String, title: String, director: String, actor: String, pubDate: String) {
-        // 다음과 같이 String 값 뒤에 .htmlEscaped를 붙여서 사용
-        textView.text = country?.basic.htmlEscaped
-    }
+//    }
     /*
      // MARK: - Navigation
      
@@ -58,42 +52,52 @@ class CDetailViewController: UIViewController {
      }
      */
 }
-extension String { //html 태그 제거 + html entity들 디코딩
-    init?(htmlEncodedString: String) {
-        guard let data = htmlEncodedString.data(using: .utf8) else {
-            return nil
-        }
-        let options: [NSAttributedString.DocumentReadingOptionKey: Any] = [
-            .documentType: NSAttributedString.DocumentType.html,
-            .characterEncoding: String.Encoding.utf8.rawValue
-        ]
-        guard let attributedString = try? NSAttributedString(data: data, options: options, documentAttributes: nil) else {
-            return nil
-        }
-        self.init(attributedString.string)
-    }
-}
-
-extension String {
-    // html 태그 제거 + html entity들 디코딩.
-    var htmlEscaped: String {
-        guard let encodedData = self.data(using: .utf8) else {
-            return self
-        }
-        
-        let options: [NSAttributedString.DocumentReadingOptionKey: Any] = [
-            .documentType: NSAttributedString.DocumentType.html,
-            .characterEncoding: String.Encoding.utf8.rawValue
-        ]
-        
-        do {
-            let attributed = try NSAttributedString(data: encodedData,
-                                                    options: options,
-                                                    documentAttributes: nil)
-            return attributed.string
-        } catch {
-            return self
-        }
-    }
-}
+//extension String { //html 태그 제거 + html entity들 디코딩
+//    init?(htmlEncodedString: String) {
+//        guard let data = htmlEncodedString.data(using: .utf8) else {
+//            return nil
+//        }
+//        let options: [NSAttributedString.DocumentReadingOptionKey: Any] = [
+//            .documentType: NSAttributedString.DocumentType.html,
+//            .characterEncoding: String.Encoding.utf8.rawValue
+//        ]
+//        guard let attributedString = try? NSAttributedString(data: data, options: options, documentAttributes: nil) else {
+//            return nil
+//        }
+//        self.init(attributedString.string)
+//    }
+//}
+//
+//extension String {
+//    // html 태그 제거 + html entity들 디코딩.
+//    var htmlEscaped: String {
+//        guard let encodedData = self.data(using: .utf8) else {
+//            return self
+//        }
+//
+//        let options: [NSAttributedString.DocumentReadingOptionKey: Any] = [
+//            .documentType: NSAttributedString.DocumentType.html,
+//            .characterEncoding: String.Encoding.utf8.rawValue
+//        ]
+//
+//        do {
+//            let attributed = try NSAttributedString(data: encodedData,
+//                                                    options: options,
+//                                                    documentAttributes: nil)
+//            return attributed.string
+//        } catch {
+//            return self
+//        }
+//    }
+//}
+//extension String { //html 태그 제거
+//    if let country = country {
+//            textView.text = country.basic.htmlEscaped
+//            print(String(htmlEncodedString: country.basic)!)
+//            print(country.basic.components(separatedBy: ["&lt;div&gt;","&lt;br&gt;&#xD;","&lt;p style=&quot;margin-left: 20px; margin-right: 20px;&quot;&gt;","&#xD;"]).joined())
+//    }
+//    public func configureCell(imageURL: String, title: String, director: String, actor: String, pubDate: String) {
+//        // 다음과 같이 String 값 뒤에 .htmlEscaped를 붙여서 사용
+//        textView.text = country?.basic.htmlEscaped
+//}
 

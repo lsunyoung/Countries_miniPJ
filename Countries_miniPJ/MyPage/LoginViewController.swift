@@ -47,17 +47,17 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         textField2.resignFirstResponder()
         return true
     }
-    
     private func ButtonEnable() { //필드 입력 시 로그인 버튼 enable
         self.textField1.addAction(UIAction(handler: { _ in
-            if self.textField1.text?.isEmpty == true {
+            if (self.textField1.text?.isEmpty == true) && (self.textField2.text?.isEmpty == true) {
                 self.LoginButton.isEnabled = false
             } else {
                 self.LoginButton.isEnabled = true
             }
         }), for: .editingChanged)
     }
-    private func setPasswordShowButton() {
+    private func setPasswordShowButton() { //비밀번호 *표시
+        textField2.isSecureTextEntry = true
         eyeButton = UIButton.init(primaryAction: UIAction(handler: {[self]_ in
             textField2.isSecureTextEntry.toggle()
             self.eyeButton.isSelected.toggle()
@@ -67,12 +67,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         buttonConfig.baseBackgroundColor = .clear
         buttonConfig.baseForegroundColor = .darkGray
         
-        eyeButton.setImage(UIImage(systemName: "eye"), for: .normal)
-        self.eyeButton.setImage(UIImage(systemName: "eye.slash"), for: .selected)
-        self.eyeButton.configuration = buttonConfig
+        eyeButton.setImage(UIImage(systemName: "eye.slash"), for: .normal) //선택 없을 때
+        eyeButton.setImage(UIImage(systemName: "eye"), for: .selected) //선택 했을 때
+        eyeButton.configuration = buttonConfig
         
-        self.textField2.rightView = eyeButton
-        self.textField2.rightViewMode = .always
+        textField2.rightView = eyeButton
+        textField2.rightViewMode = .always
     }
     
     @IBAction func actLoginButton(_ sender: Any) {

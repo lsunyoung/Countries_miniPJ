@@ -32,6 +32,8 @@
 		296341F1290AC7C900EA89F2 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296341F0290AC7C900EA89F2 /* ProgressViewController.swift */; };
 		298B1498290BA72300A02867 /* StartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298B1497290BA72300A02867 /* StartTableViewController.swift */; };
 		298B149A290BA78600A02867 /* AirData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298B1499290BA78600A02867 /* AirData.swift */; };
+		29931FA62984E4A00032ABE8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29931FA52984E4A00032ABE8 /* TabBarController.swift */; };
+		29931FA82984FDD90032ABE8 /* PopularityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29931FA72984FDD90032ABE8 /* PopularityViewController.swift */; };
 		29CD5EBB291297DB0045C871 /* CummunityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CD5EBA291297DB0045C871 /* CummunityTableViewController.swift */; };
 		29CD5EBD2912A2010045C871 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CD5EBC2912A2010045C871 /* AddViewController.swift */; };
 		29CD5EBF2912B4C50045C871 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CD5EBE2912B4C50045C871 /* Utils.swift */; };
@@ -67,6 +69,8 @@
 		296341F0290AC7C900EA89F2 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		298B1497290BA72300A02867 /* StartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTableViewController.swift; sourceTree = "<group>"; };
 		298B1499290BA78600A02867 /* AirData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirData.swift; sourceTree = "<group>"; };
+		29931FA52984E4A00032ABE8 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		29931FA72984FDD90032ABE8 /* PopularityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularityViewController.swift; sourceTree = "<group>"; };
 		29CD5EBA291297DB0045C871 /* CummunityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CummunityTableViewController.swift; sourceTree = "<group>"; };
 		29CD5EBC2912A2010045C871 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		29CD5EBE2912B4C50045C871 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -166,6 +170,8 @@
 				294B7DC029094AEA00B409C5 /* AlertViewController.swift */,
 				29D2C7CE2927C3A6002718CF /* CalendarViewController.swift */,
 				296341F0290AC7C900EA89F2 /* ProgressViewController.swift */,
+				29931FA52984E4A00032ABE8 /* TabBarController.swift */,
+				29931FA72984FDD90032ABE8 /* PopularityViewController.swift */,
 				298B1499290BA78600A02867 /* AirData.swift */,
 			);
 			path = Airline;
@@ -264,6 +270,7 @@
 				298B1498290BA72300A02867 /* StartTableViewController.swift in Sources */,
 				29CD5EBF2912B4C50045C871 /* Utils.swift in Sources */,
 				293A12FB292A582B0000319F /* CummunityHeart.swift in Sources */,
+				29931FA82984FDD90032ABE8 /* PopularityViewController.swift in Sources */,
 				29D2C7D12927D530002718CF /* NaverWebViewController.swift in Sources */,
 				29D2C7CF2927C3A6002718CF /* CalendarViewController.swift in Sources */,
 				294B7DB72908EF0F00B409C5 /* CDetailViewController.swift in Sources */,
@@ -271,6 +278,7 @@
 				294F4C8B2912388A00A92567 /* LoginViewController.swift in Sources */,
 				29152512292A615B0081D3A7 /* ChatViewController.swift in Sources */,
 				292E21972910C2C10083C988 /* EndTableViewController.swift in Sources */,
+				29931FA62984E4A00032ABE8 /* TabBarController.swift in Sources */,
 				292DED2C2929D7B600F5502A /* MyHeart.swift in Sources */,
 				29634178290A0D4900EA89F2 /* CXMainTableViewController.swift in Sources */,
 			);

@@ -82,3 +82,5 @@ let nations:[String:[Nation]] = [
         Nation(name: "멜버른")
     ]
 ]
+
+//["charleyrivers","chilkoottrail","chincoteague","hiddenlake","icybay","lakemcdonald","rainbowlake","silversalmoncreek","stmarylake","turtlerock","twinlake","umbagog"]
