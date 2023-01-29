@@ -11,12 +11,10 @@ import AVFoundation //사운드, 진동 메소드
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var pageControl: UIPageControl!
-    //    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var homeimageView: UIImageView!
     @IBOutlet weak var bellButton: UIButton!
    
     @IBOutlet weak var imageCircleView1: UIButton!
-    //    @IBOutlet weak var imageCircleView1: UIImageView!
     @IBOutlet weak var imageCircleView2: UIImageView!
     @IBOutlet weak var imageCircleView3: UIImageView!
     @IBOutlet weak var imageCircleView4: UIImageView!
@@ -30,11 +28,10 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var homeScrollView: UIScrollView!
     @IBOutlet weak var pageControl2: UIPageControl!
-           
-    let Scrollimages = [UIImage(imageLiteralResourceName: "lakemcdonald"),UIImage(imageLiteralResourceName: "silversalmoncreek"),UIImage(imageLiteralResourceName: "turtlerock"),UIImage(imageLiteralResourceName: "umbagog")]
     
-    var images = ["travel1","travel2","travel3"]
-    var imageViews = [UIImageView]()
+    var images = ["chilkoottrail","hiddenlake","chincoteague"]
+           
+    let Scrollimages = [UIImage(imageLiteralResourceName: "charleyrivers"),UIImage(imageLiteralResourceName: "stmarylake"),UIImage(imageLiteralResourceName: "silversalmoncreek"),UIImage(imageLiteralResourceName: "turtlerock")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,9 +47,6 @@ class HomeViewController: UIViewController {
         setScrollPageControl()
     }
 
-    @IBAction func ChangePage(_ sender: Any) {
-        homeimageView.image = UIImage(named: images[pageControl.currentPage])
-    }
     func Menu() {
         var menuItems: [UIAction] {
             return [
@@ -71,20 +65,21 @@ class HomeViewController: UIViewController {
         bellButton.menu = demoMenu
         bellButton.showsMenuAsPrimaryAction = true //짧게 눌러서 메뉴
     }
-
+    
+    @IBAction func ChangePage(_ sender: Any) {
+        homeimageView.image = UIImage(named: images[pageControl.currentPage])
+    }
     private func setImagePageControl() {
         homeimageView.image = UIImage(named: images[0])
-        
-        pageControl.numberOfPages = images.count
-        pageControl.currentPage = 0
-        
+        homeimageView.layer.cornerRadius = homeimageView.frame.width/8 //테두리 라운드 처리
+        homeimageView.clipsToBounds = true
         pageControl.numberOfPages = images.count
     }
     private func setPageControlSelectedPage(currentPage:Int) {
         pageControl.currentPage = currentPage
     }
     
-    func imageCircle() {
+    func imageCircle() { //인기 도시 image
         imageCircleView1.layer.cornerRadius = imageCircleView1.layer.frame.size.width / 2 //0.5 곱해도됨
         imageCircleView1.clipsToBounds = true
         imageCircleView2.layer.cornerRadius = imageCircleView2.frame.height/2
@@ -135,7 +130,7 @@ class HomeViewController: UIViewController {
                 let xPos = homeScrollView.frame.width * CGFloat(i)
                 imageView.frame = CGRect(x: xPos, y: 0, width: homeScrollView.bounds.width, height: homeScrollView.bounds.height)
                 imageView.image = Scrollimages[i]
-                imageView.layer.cornerRadius = imageView.frame.width/8
+                imageView.layer.cornerRadius = imageView.frame.width/8 //테두리 라운드 처리
                 imageView.clipsToBounds = true
                 imageView.layer.borderColor = UIColor.clear.cgColor  //원형 이미지의 테두리 제거
                 homeScrollView.addSubview(imageView)

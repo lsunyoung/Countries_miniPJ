@@ -22,6 +22,9 @@ class PopularityViewController: UIViewController {
         imageView.layer.borderColor = UIColor.darkGray.cgColor  //원형 이미지 테두리 색상
     }
 
+    @IBAction func actBack(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
     /*
     // MARK: - Navigation
 

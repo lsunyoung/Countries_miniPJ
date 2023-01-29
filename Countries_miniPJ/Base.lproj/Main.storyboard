@@ -151,13 +151,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="fW6-7z-Ay0">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="49.333333333333336"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7SR-Ut-gHd">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7SR-Ut-gHd">
                                                 <rect key="frame" x="0.0" y="0.0" width="280" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Con" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rI-RJ-4PN">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Con" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rI-RJ-4PN">
                                                 <rect key="frame" x="0.0" y="29" width="280" height="20.333333333333329"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -182,7 +182,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6A-Ck-TDf">
                                                 <rect key="frame" x="30" y="1" width="330" height="650"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <mutableString key="text">Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.</mutableString>
+                                                <string key="text">Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -349,7 +349,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASj-iC-HxK">
                                                 <rect key="frame" x="30" y="2" width="330" height="650"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <mutableString key="text">Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.</mutableString>
+                                                <string key="text">Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -379,7 +379,14 @@
                             <constraint firstItem="hgx-3G-r52" firstAttribute="leading" secondItem="jyQ-wd-S5U" secondAttribute="leading" constant="70" id="tmK-EL-SiN"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="S2B-So-9p9"/>
+                    <navigationItem key="navigationItem" id="S2B-So-9p9">
+                        <barButtonItem key="leftBarButtonItem" image="back_small" id="hHz-U3-9ne">
+                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="actBack:" destination="y6D-9e-ceq" id="0bV-Kt-Q1R"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="FjE-7H-JhZ" id="cIh-US-vLO"/>
                     </connections>
@@ -429,31 +436,31 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eST-mx-QUW">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="1113"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="sud-X0-H0Z">
-                                                <rect key="frame" x="15" y="30" width="360" height="1043.6666666666667"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="sud-X0-H0Z">
+                                                <rect key="frame" x="15" y="30" width="360" height="1076.6666666666667"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="U8b-qr-Q4k">
-                                                        <rect key="frame" x="0.0" y="0.0" width="360" height="219"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="U8b-qr-Q4k">
+                                                        <rect key="frame" x="0.0" y="0.0" width="360" height="216"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q1b-DZ-vms">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q1b-DZ-vms">
                                                                 <rect key="frame" x="0.0" y="0.0" width="360" height="190"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="360" id="8TQ-77-ezn"/>
                                                                     <constraint firstAttribute="height" constant="190" id="RJ4-ji-D39"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Xxd-zn-pJj">
-                                                                <rect key="frame" x="0.0" y="193" width="360" height="26"/>
+                                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Xxd-zn-pJj">
+                                                                <rect key="frame" x="0.0" y="190" width="360" height="26"/>
                                                                 <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <color key="currentPageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <connections>
-                                                                    <action selector="ChangePage:" destination="H7f-mx-sEV" eventType="valueChanged" id="2lO-Gx-E9d"/>
+                                                                    <action selector="ChangePage:" destination="H7f-mx-sEV" eventType="valueChanged" id="c4A-1y-gBX"/>
                                                                 </connections>
                                                             </pageControl>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mbs-rW-wYq">
-                                                        <rect key="frame" x="0.0" y="254" width="360" height="80"/>
+                                                        <rect key="frame" x="0.0" y="251" width="360" height="80"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="RKf-g0-aFi">
                                                                 <rect key="frame" x="0.0" y="0.0" width="360" height="35"/>
@@ -545,7 +552,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pZ3-cw-3mo">
-                                                        <rect key="frame" x="0.0" y="369" width="360" height="131.66666666666663"/>
+                                                        <rect key="frame" x="0.0" y="366" width="360" height="131.66666666666663"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 인기 도시" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjh-Op-4mK">
                                                                 <rect key="frame" x="0.0" y="0.0" width="360" height="21.666666666666668"/>
@@ -653,11 +660,11 @@
                                                             </scrollView>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="250" translatesAutoresizingMaskIntoConstraints="NO" id="WJf-Ku-tC4">
-                                                        <rect key="frame" x="0.0" y="535.66666666666663" width="360" height="507.99999999999989"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="250" translatesAutoresizingMaskIntoConstraints="NO" id="WJf-Ku-tC4">
+                                                        <rect key="frame" x="0.0" y="532.66666666666663" width="360" height="543.99999999999989"/>
                                                         <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="y6F-YY-snj">
-                                                                <rect key="frame" x="0.0" y="0.0" width="360" height="240"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="y6F-YY-snj">
+                                                                <rect key="frame" x="0.0" y="0.0" width="360" height="276"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 추천 여행지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSc-Nu-kj5">
                                                                         <rect key="frame" x="0.0" y="0.0" width="360" height="30"/>
@@ -675,10 +682,16 @@
                                                                             <constraint firstAttribute="height" constant="200" id="MFw-YS-AT5"/>
                                                                         </constraints>
                                                                     </scrollView>
+                                                                    <pageControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="bwi-J7-KUW">
+                                                                        <rect key="frame" x="0.0" y="41.666666666666629" width="360" height="26"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </pageControl>
                                                                 </subviews>
                                                             </stackView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="♡̌̈ 주식회사 이선영 ♡̌̈" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5g-At-DoD">
-                                                                <rect key="frame" x="0.0" y="490.00000000000011" width="360" height="18"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="♡̌̈ 주식회사 이선영 ♡̌̈" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5g-At-DoD">
+                                                                <rect key="frame" x="0.0" y="526.00000000000011" width="360" height="18"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -742,12 +755,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="51D-8k-XOz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="bwi-J7-KUW">
-                    <rect key="frame" x="0.0" y="0.0" width="360" height="26"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                </pageControl>
             </objects>
             <point key="canvasLocation" x="-1732.3076923076922" y="1402.6066350710901"/>
         </scene>
@@ -981,18 +988,6 @@
                                     <action selector="segChanged:" destination="YDY-St-yGe" eventType="valueChanged" id="AHO-tl-VHK"/>
                                 </connections>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZS-zp-e1B">
-                                <rect key="frame" x="130" y="462" width="132" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="항공권 검색하기">
-                                    <color key="baseForegroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                    <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="Z1T-CK-vEY" kind="show" identifier="pro" id="59n-1L-kdN"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ot5-Dy-VXq">
                                 <rect key="frame" x="30" y="315" width="331" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1155,6 +1150,25 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="Bxp-hr-MHN" kind="presentation" identifier="calendar" id="FdL-W7-8ze"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZS-zp-e1B">
+                                <rect key="frame" x="124" y="461" width="140" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="항공권 검색하기">
+                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" title="항공권 검색하기">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                    <color key="baseForegroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Z1T-CK-vEY" kind="show" identifier="pro" id="59n-1L-kdN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2452,6 +2466,7 @@
         <image name="apple.logo" catalog="system" width="105" height="128"/>
         <image name="arrowshape.left" catalog="system" width="128" height="104"/>
         <image name="arrowshape.right" catalog="system" width="128" height="104"/>
+        <image name="back_small" width="26.666666030883789" height="26.666666030883789"/>
         <image name="bag.fill" catalog="system" width="128" height="128"/>
         <image name="bell.fill" catalog="system" width="123" height="128"/>
         <image name="bolt.car.fill" catalog="system" width="128" height="95"/>
