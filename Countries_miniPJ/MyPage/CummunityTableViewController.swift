@@ -12,19 +12,24 @@ class CummunityTableViewController: UITableViewController {
 
     var post:NSMutableArray?
     
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "게시판"
         tableView.rowHeight = 450
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
+        targetPath()
+        tableView.dataSource = self
+    }
+    func targetPath() {
         let targetPath = getFilePath(fileName: "post.plist")
                 print("targetPath:\(targetPath)")
         guard let originPath = Bundle.main.path(forResource: "post", ofType: "plist") else {return}
                 print("originPath:\(originPath)")
         copyFile(originPath, to: targetPath)
         post = NSMutableArray(contentsOfFile: targetPath)
-        tableView.dataSource = self
     }
     override func viewWillAppear(_ animated: Bool) {
         tableView.reloadData()

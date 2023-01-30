@@ -18,8 +18,6 @@ class CXMainTableViewController: UITableViewController {
     var tempModel:item?
     var countries:[item] = []
     
-    var aa = 1
-    var bb = 2 
 //    var countries:[[String:String]] = []
 //    var country:[String:String] = [:]
 //    var key:String?
@@ -133,17 +131,17 @@ class CXMainTableViewController: UITableViewController {
 
     @IBAction func actHeart(_ sender: UIButton) {
 //        sender.setImage(UIImage(systemName: "heart.fill"), for: .normal)
-//        if (isheartOn==true) {
-//            let alert = UIAlertController(title: "안내", message: "찜 성공", preferredStyle: .alert)
-//            let action1 = UIAlertAction(title: "확인", style: .default)
-//            alert.addAction(action1)
-//            self.present(alert, animated: true)
-//        } else if (isheartOn==false) {
-//            let alert = UIAlertController(title: "안내", message: "찜해제", preferredStyle: .alert)
-//            let action1 = UIAlertAction(title: "확인", style: .default)
-//            alert.addAction(action1)
-//            self.present(alert, animated: true)
-//        }
+        if (isheartOn==true) {
+            let alert = UIAlertController(title: "안내", message: "찜 성공", preferredStyle: .alert)
+            let action1 = UIAlertAction(title: "확인", style: .default)
+            alert.addAction(action1)
+            self.present(alert, animated: true)
+        } else if (isheartOn==false) {
+            let alert = UIAlertController(title: "안내", message: "찜해제", preferredStyle: .alert)
+            let action1 = UIAlertAction(title: "확인", style: .default)
+            alert.addAction(action1)
+            self.present(alert, animated: true)
+        }
         
     }
     

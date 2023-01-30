@@ -34,7 +34,7 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate, MKMap
     }
     
     @IBAction func actBack(_ sender: Any) {
-        self.dismiss(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
     
     /*

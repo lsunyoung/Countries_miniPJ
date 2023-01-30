@@ -46,18 +46,38 @@ class AddViewController: UIViewController {
     }
     
     @IBAction func actSave(_ sender: Any) {
-        let saveUrl = docUrlFileName("sample.png")
-        guard let savedData = try? Data(contentsOf: saveUrl) else {return}
-        let image = UIImage(data: savedData)
-        addimageView.image = image
-        if let text = textField.text/*, let image = addimageView.image*/ {
-            let newPost = ["text":text/*, "image":image*/] as [String : String]
-            post?.add(newPost)
-            post?.write(toFile: getFilePath(fileName: "post.plist"), atomically: true)
-            self.navigationController?.popViewController(animated: true)
-        } else {
-            print("정보를 모두 입력하지 않았습니다.")
+        if textField.text?.isEmpty == true {
+            let alert = UIAlertController(title: "게시물 등록 실패", message: "문구를 입력해주세요.", preferredStyle: .alert)
+            let action = UIAlertAction(title: "확인", style: .default)
+
+            alert.addAction(action)
+            present(alert, animated: true)
         }
+        let alert = UIAlertController(title: "게시물 등록 안내", message: "등록하시겠습니까?", preferredStyle: .alert)
+        let actioncheck = UIAlertAction(title: "확인", style: .default) { _ in
+            let saveUrl = docUrlFileName("sample.png")
+            guard let savedData = try? Data(contentsOf: saveUrl) else {return}
+            let image = UIImage(data: savedData)
+            self.addimageView.image = image
+            if let text = self.textField.text/*, let image = addimageView.image*/ {
+                let newPost = ["text":text/*, "image":image*/] as [String : String]
+                self.post?.add(newPost)
+                self.post?.write(toFile: getFilePath(fileName: "post.plist"), atomically: true)
+                
+                let alert = UIAlertController(title: "게시물 등록 성공", message: "등록이 완료되었습니다.", preferredStyle: .alert)
+                let action = UIAlertAction(title: "확인", style: .default) { _ in
+                    self.navigationController?.popViewController(animated: true)
+                }
+                alert.addAction(action)
+                self.present(alert, animated: true)
+            }
+        }
+        let actioncencle = UIAlertAction(title: "취소", style: .destructive)
+
+        alert.addAction(actioncheck)
+        alert.addAction(actioncencle)
+        present(alert, animated: true)
+        
     }
     @IBAction func actBack(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)

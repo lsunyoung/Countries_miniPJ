@@ -19,11 +19,6 @@ class MyHeart: UIButton {
         }
     }
     
-    enum DefaultResource {
-        static let notCheckedImage = "btn_check_off"
-        static let checkedImage = "btn_check_on"
-    }
-    
     /// 체크 상태 변경
     var isChecked: Bool = false {
         didSet {

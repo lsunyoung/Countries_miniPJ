@@ -22,7 +22,14 @@ class CWebViewController: UIViewController {
         webView.load(request)
     }
     
-
+    @IBAction func actBack(_ sender: Any) {
+        self.dismiss(animated: true) //모달뷰 Back
+    }
+    
+    @IBAction func actList(_ sender: Any) {
+    
+    }
+    
     /*
     // MARK: - Navigation
 

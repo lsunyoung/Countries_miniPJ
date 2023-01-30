@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		290D9A5429877AB200282F0D /* CummunityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D9A5329877AB200282F0D /* CummunityTableViewCell.swift */; };
+		290D9A9A2987EA2800282F0D /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D9A992987EA2800282F0D /* CountryTableViewCell.swift */; };
 		291365122928950C0075CE2B /* post.plist in Resources */ = {isa = PBXBuildFile; fileRef = 291365112928950C0075CE2B /* post.plist */; };
 		291365142928B15A0075CE2B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291365132928B15A0075CE2B /* SignUpViewController.swift */; };
 		29152512292A615B0081D3A7 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29152511292A615B0081D3A7 /* ChatViewController.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		290D9A5329877AB200282F0D /* CummunityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CummunityTableViewCell.swift; sourceTree = "<group>"; };
+		290D9A992987EA2800282F0D /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
 		291365112928950C0075CE2B /* post.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = post.plist; sourceTree = "<group>"; };
 		291365132928B15A0075CE2B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		29152511292A615B0081D3A7 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +116,7 @@
 				292E21A1291112280083C988 /* NaverLoginViewController.swift */,
 				2944699629278DD700D10E94 /* LocationViewController.swift */,
 				29CD5EBA291297DB0045C871 /* CummunityTableViewController.swift */,
+				290D9A5329877AB200282F0D /* CummunityTableViewCell.swift */,
 				293A12FA292A582B0000319F /* CummunityHeart.swift */,
 				29CD5EBC2912A2010045C871 /* AddViewController.swift */,
 				29152511292A615B0081D3A7 /* ChatViewController.swift */,
@@ -152,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				29634177290A0D4900EA89F2 /* CXMainTableViewController.swift */,
+				290D9A992987EA2800282F0D /* CountryTableViewCell.swift */,
 				292DED2B2929D7B500F5502A /* MyHeart.swift */,
 				294B7DB62908EF0F00B409C5 /* CDetailViewController.swift */,
 				294B7DB82908EF2200B409C5 /* CWebViewController.swift */,
@@ -277,7 +283,9 @@
 				294B7DB92908EF2200B409C5 /* CWebViewController.swift in Sources */,
 				294F4C8B2912388A00A92567 /* LoginViewController.swift in Sources */,
 				29152512292A615B0081D3A7 /* ChatViewController.swift in Sources */,
+				290D9A9A2987EA2800282F0D /* CountryTableViewCell.swift in Sources */,
 				292E21972910C2C10083C988 /* EndTableViewController.swift in Sources */,
+				290D9A5429877AB200282F0D /* CummunityTableViewCell.swift in Sources */,
 				29931FA62984E4A00032ABE8 /* TabBarController.swift in Sources */,
 				292DED2C2929D7B600F5502A /* MyHeart.swift in Sources */,
 				29634178290A0D4900EA89F2 /* CXMainTableViewController.swift in Sources */,

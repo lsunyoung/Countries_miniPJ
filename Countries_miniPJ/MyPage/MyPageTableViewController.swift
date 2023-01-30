@@ -20,6 +20,8 @@ class MyPageTableViewController: UITableViewController {
         super.viewDidLoad()
         self.title = "마이페이지"
         logoutButton.layer.cornerRadius = 10 //버튼 라운드 처리
+        
+        tableView.separatorStyle = .none //테이블 라인 없애기
     }
 
     @IBAction func actLogout(_ sender: Any) {
