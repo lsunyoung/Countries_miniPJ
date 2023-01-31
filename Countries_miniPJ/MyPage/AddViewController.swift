@@ -59,8 +59,8 @@ class AddViewController: UIViewController {
             guard let savedData = try? Data(contentsOf: saveUrl) else {return}
             let image = UIImage(data: savedData)
             self.addimageView.image = image
-            if let text = self.textField.text/*, let image = addimageView.image*/ {
-                let newPost = ["text":text/*, "image":image*/] as [String : String]
+            if let text = self.textField.text/*, let images = self.addimageView.image*/ {
+                let newPost = ["text":text, "image":"hiddenlake"] as [String : String]
                 self.post?.add(newPost)
                 self.post?.write(toFile: getFilePath(fileName: "post.plist"), atomically: true)
                 

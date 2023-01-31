@@ -113,6 +113,11 @@ class SignUpViewController: UIViewController {
                 self.CertifiedCheckButton.isEnabled = true
             }
         }), for: .editingChanged)
+//        if self.IDTextfield.text != "" {
+//            self.signupButton.isEnabled = false
+//        } else {
+//            self.signupButton.isEnabled = true
+//        }
     }
     
     @IBAction func IdTextFieldTyped(_ sender: Any) {
@@ -217,6 +222,10 @@ class SignUpViewController: UIViewController {
                     if isVaildPattern {
                         PWTextDescription.text = "조건에 맞는 비밀번호입니다."
                         PWTextDescription.isHidden = true
+                        if PWTextfield.text != RPWTextfield.text {
+                            RPWTextDescription.text = " 비밀번호가 일치하지 않습니다."
+                            RPWTextDescription.isHidden = false
+                        }
                     } else {
                         PWTextDescription.text = " 영문, 숫자, 특수문자가 필수로 입력되어야 합니다."
                     }
