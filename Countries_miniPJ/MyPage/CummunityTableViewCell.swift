@@ -28,5 +28,18 @@ class CummunityTableViewCell: UITableViewCell {
                 contentView.layer.borderColor = UIColor.white.cgColor
             }
     }
-
+//    @IBAction func actShare(_ sender: Any) {
+//        let alert = UIAlertController(title: "공유", message: "\n\n\n\n\n", preferredStyle: .actionSheet)
+//        let action1 = UIAlertAction(title: "취소", style: .cancel) { _ in
+//        }
+//        alert.addAction(action1)
+//        kakaoButton?.frame = CGRect(x: 70, y: 60, width: 50, height: 50)
+//        alert.view.addSubview(kakaoButton)
+//        facebookButton?.frame = CGRect(x: 160, y: 60, width: 50, height: 50)
+//        alert.view.addSubview(facebookButton)
+//        snsButton?.frame = CGRect(x: 250, y: 60, width: 50, height: 50)
+//        alert.view.addSubview(snsButton)
+//
+//        present(alert, animated: true)
+//    }
 }

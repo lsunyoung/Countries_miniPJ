@@ -147,7 +147,7 @@
 			children = (
 				292E219D29110D930083C988 /* Basic */,
 				29634179290A0D5500EA89F2 /* Country */,
-				2963417A290A0D7700EA89F2 /* Airline */,
+				2963417A290A0D7700EA89F2 /* Home */,
 				292E219E29110DB40083C988 /* MyPage */,
 			);
 			path = Countries_miniPJ;
@@ -166,7 +166,7 @@
 			name = Country;
 			sourceTree = "<group>";
 		};
-		2963417A290A0D7700EA89F2 /* Airline */ = {
+		2963417A290A0D7700EA89F2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				291A7638290B74CA00FC1E84 /* HomeViewController.swift */,
@@ -180,7 +180,7 @@
 				29931FA72984FDD90032ABE8 /* PopularityViewController.swift */,
 				298B1499290BA78600A02867 /* AirData.swift */,
 			);
-			path = Airline;
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

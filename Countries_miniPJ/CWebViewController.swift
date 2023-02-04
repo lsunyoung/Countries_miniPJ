@@ -27,7 +27,7 @@ class CWebViewController: UIViewController {
     }
     
     @IBAction func actList(_ sender: Any) {
-    
+        self.dismiss(animated: true)
     }
     
     /*

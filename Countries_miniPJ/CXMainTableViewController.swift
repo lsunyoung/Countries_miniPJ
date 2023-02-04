@@ -130,19 +130,18 @@ class CXMainTableViewController: UITableViewController {
     }
 
     @IBAction func actHeart(_ sender: UIButton) {
-//        sender.setImage(UIImage(systemName: "heart.fill"), for: .normal)
+//        sender.setImage(UIImage(systemName: "star.fill"), for: .normal)
         if (isheartOn==true) {
-            let alert = UIAlertController(title: "안내", message: "찜 성공", preferredStyle: .alert)
+            let alert = UIAlertController(title: "안내", message: "즐겨찾기 성공", preferredStyle: .alert)
             let action1 = UIAlertAction(title: "확인", style: .default)
             alert.addAction(action1)
             self.present(alert, animated: true)
         } else if (isheartOn==false) {
-            let alert = UIAlertController(title: "안내", message: "찜해제", preferredStyle: .alert)
+            let alert = UIAlertController(title: "안내", message: "즐겨찾기 해제", preferredStyle: .alert)
             let action1 = UIAlertAction(title: "확인", style: .default)
             alert.addAction(action1)
             self.present(alert, animated: true)
         }
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

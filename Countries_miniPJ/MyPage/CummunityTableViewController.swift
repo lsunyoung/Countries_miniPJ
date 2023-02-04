@@ -12,6 +12,10 @@ class CummunityTableViewController: UITableViewController {
 
     var post:NSMutableArray?
     
+    @IBOutlet weak var kakaoButton: UIButton!
+    @IBOutlet weak var facebookButton: UIButton!
+    @IBOutlet weak var snsButton: UIButton!
+    
     @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
@@ -82,8 +86,48 @@ class CummunityTableViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    
     @IBAction func actBack(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    @IBAction func actShare(_ sender: Any) {
+        let alert = UIAlertController(title: "공유", message: "\n\n\n\n\n", preferredStyle: .actionSheet)
+        let action1 = UIAlertAction(title: "취소", style: .cancel) { _ in
+        }
+        alert.addAction(action1)
+   
+        kakaoButton.frame = CGRect(x: 70, y: 60, width: 50, height: 50)
+        kakaoButton.setImage(UIImage(named: "kakaoTalk"), for: .normal)
+        alert.view.addSubview(kakaoButton)
+        facebookButton?.frame = CGRect(x: 160, y: 60, width: 50, height: 50)
+        alert.view.addSubview(facebookButton)
+        snsButton.frame = CGRect(x: 250, y: 60, width: 50, height: 50)
+        alert.view.addSubview(snsButton)
+
+        present(alert, animated: true)
+    }
+    @IBAction func actKakao(_ sender: Any) {
+        // URLScheme 문자열을 통해 URL 인스턴스를 만들어 줍니다.
+        if let url = NSURL(string: "kakaolink://"),
+           //canOpenURL(_:) 메소드를 통해서 URL 체계를 처리하는 데 앱을 사용할 수 있는지 여부를 확인
+           UIApplication.shared.canOpenURL(url as URL) {
+            //사용가능한 URLScheme이라면 open(_:options:completionHandler:) 메소드를 호출해서
+            //만들어둔 URL 인스턴스를 열어줍니다.
+            UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+        }
+        self.navigationController?.popViewController(animated: true)
+    }
+    @IBAction func actFacebook(_ sender: Any) {
+        if let url = NSURL(string: "https://apps.apple.com/kr/app/facebook/id284882215"),
+           UIApplication.shared.canOpenURL(url as URL) {
+            UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+        }
+        self.navigationController?.popViewController(animated: true)
+    }
+    @IBAction func actSns(_ sender: Any) {
+        if let url = NSURL(string: "sms://"),
+           UIApplication.shared.canOpenURL(url as URL) {
+            UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+        }
         self.navigationController?.popViewController(animated: true)
     }
     

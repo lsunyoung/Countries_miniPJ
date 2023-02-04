@@ -10,9 +10,9 @@ import UIKit
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
     var lblLogin:UILabel?
-    var lblMy:UILabel?
     var lblID:UILabel?
     var logoutButton:UIButton?
+    var MyButton:UIButton?
 
     @IBOutlet weak var textField1: UITextField!
     @IBOutlet weak var textField2: UITextField!
@@ -79,13 +79,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         self.navigationController?.popViewController(animated: true)
         
         if let lblLogin = lblLogin {
-            lblLogin.text = "이선영님 안녕하세요:)"
+            lblLogin.text = "이선영님 안녕하세요 :)"
         }
         if let lblID = lblID {
             lblID.text = textField1.text
         }
-        if let lblMy = lblMy {
-            lblMy.text = "내정보"
+        if let MyButton = MyButton {
+            MyButton.setTitle(" 내정보", for: .normal)
+            MyButton.setTitleColor(.white, for: .normal)
+            MyButton.backgroundColor = UIColor.darkGray
+            MyButton.setImage(UIImage(systemName: "person"), for: .normal)
         }
         if let logoutButton = logoutButton {
             logoutButton.setTitle("로그아웃", for: .normal)

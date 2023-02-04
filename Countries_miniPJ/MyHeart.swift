@@ -11,8 +11,8 @@ class MyHeart: UIButton {
 
     /// 하트 이미지
     var checkBoxResouces = OnOffResources(
-        onImage: UIImage(systemName: "heart.fill"),
-        offImage: UIImage(systemName: "heart")
+        onImage: UIImage(systemName: "star.fill")?.withTintColor(.yellow).withRenderingMode(.alwaysOriginal),
+        offImage: UIImage(systemName: "star")
     ) {
         didSet {
             self.setChecked(isChecked)

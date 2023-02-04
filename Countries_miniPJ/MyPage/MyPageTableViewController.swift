@@ -11,7 +11,7 @@ class MyPageTableViewController: UITableViewController {
 
     @IBOutlet weak var lblLogin: UILabel!
     @IBOutlet weak var lblID: UILabel!
-    @IBOutlet weak var lblMy: UILabel!
+    @IBOutlet weak var MyButton: UIButton!
     @IBOutlet weak var lblCalldibs: UILabel!
     @IBOutlet weak var lblCommunity: UILabel!
     @IBOutlet weak var logoutButton: UIButton!
@@ -20,17 +20,21 @@ class MyPageTableViewController: UITableViewController {
         super.viewDidLoad()
         self.title = "마이페이지"
         logoutButton.layer.cornerRadius = 10 //버튼 라운드 처리
-        
-        tableView.separatorStyle = .none //테이블 라인 없애기
+        MyButton.layer.cornerRadius = 10
     }
 
     @IBAction func actLogout(_ sender: Any) {
         logoutButton.setTitle("", for: .selected)
-        logoutButton.setTitleColor(.white, for: .selected)
-        logoutButton.backgroundColor = .white
+        logoutButton.setTitleColor(.clear, for: .selected)
+        logoutButton.setTitleColor(.clear, for: .normal)
+        logoutButton.backgroundColor = .clear
+        MyButton.setTitle("", for: .selected)
+        MyButton.setTitleColor(.clear, for: .selected)
+        MyButton.setTitleColor(.clear, for: .normal)
+        MyButton.backgroundColor = .clear
+        MyButton.setImage(UIImage(systemName: ""), for: .normal)
         lblLogin.text = "로그인 해주세요."
         lblID.text = ""
-        lblMy.text = ""
     }
     // MARK: - Table view data source
 
@@ -41,12 +45,12 @@ class MyPageTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return 4
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "login" {
             let vc = segue.destination as? LoginViewController
-            vc?.lblMy = lblMy
+            vc?.MyButton = MyButton
             vc?.lblLogin = lblLogin
             vc?.lblID = lblID
             vc?.logoutButton = logoutButton
