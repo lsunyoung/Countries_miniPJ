@@ -18,7 +18,7 @@
 		292E21972910C2C10083C988 /* EndTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292E21962910C2C10083C988 /* EndTableViewController.swift */; };
 		292E21A2291112280083C988 /* NaverLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292E21A1291112280083C988 /* NaverLoginViewController.swift */; };
 		293A12FB292A582B0000319F /* CummunityHeart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A12FA292A582B0000319F /* CummunityHeart.swift */; };
-		2944699729278DD700D10E94 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2944699629278DD700D10E94 /* LocationViewController.swift */; };
+		2944699729278DD700D10E94 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2944699629278DD700D10E94 /* QRCodeViewController.swift */; };
 		294B7DA12908C0B100B409C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294B7DA02908C0B100B409C5 /* AppDelegate.swift */; };
 		294B7DA32908C0B100B409C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294B7DA22908C0B100B409C5 /* SceneDelegate.swift */; };
 		294B7DA82908C0B100B409C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 294B7DA62908C0B100B409C5 /* Main.storyboard */; };
@@ -55,7 +55,7 @@
 		292E21962910C2C10083C988 /* EndTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndTableViewController.swift; sourceTree = "<group>"; };
 		292E21A1291112280083C988 /* NaverLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverLoginViewController.swift; sourceTree = "<group>"; };
 		293A12FA292A582B0000319F /* CummunityHeart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CummunityHeart.swift; sourceTree = "<group>"; };
-		2944699629278DD700D10E94 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		2944699629278DD700D10E94 /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 		294B7D9D2908C0B100B409C5 /* Countries_miniPJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Countries_miniPJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		294B7DA02908C0B100B409C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		294B7DA22908C0B100B409C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,7 +114,7 @@
 				291365132928B15A0075CE2B /* SignUpViewController.swift */,
 				292DED292929D64600F5502A /* SignUpCheckBox.swift */,
 				292E21A1291112280083C988 /* NaverLoginViewController.swift */,
-				2944699629278DD700D10E94 /* LocationViewController.swift */,
+				2944699629278DD700D10E94 /* QRCodeViewController.swift */,
 				29CD5EBA291297DB0045C871 /* CummunityTableViewController.swift */,
 				290D9A5329877AB200282F0D /* CummunityTableViewCell.swift */,
 				293A12FA292A582B0000319F /* CummunityHeart.swift */,
@@ -259,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2944699729278DD700D10E94 /* LocationViewController.swift in Sources */,
+				2944699729278DD700D10E94 /* QRCodeViewController.swift in Sources */,
 				294B7DBD290927E800B409C5 /* Data.swift in Sources */,
 				29CD5EBB291297DB0045C871 /* CummunityTableViewController.swift in Sources */,
 				29CD5EBD2912A2010045C871 /* AddViewController.swift in Sources */,

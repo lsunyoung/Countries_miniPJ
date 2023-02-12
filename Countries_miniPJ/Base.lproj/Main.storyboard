@@ -289,7 +289,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="tHB-FG-Y2c">
-                                <rect key="frame" x="36" y="212" width="409" height="363"/>
+                                <rect key="frame" x="35" y="212" width="409" height="363"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.94901961089999998" green="0.67058825489999996" blue="0.74117654560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <locale key="locale" localeIdentifier="ko_KR"/>
@@ -1722,7 +1722,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ab3-Hb-CXC">
-                                                    <rect key="frame" x="20" y="19" width="56" height="22"/>
+                                                    <rect key="frame" x="19.999999999999993" y="19" width="123.33333333333331" height="22"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pG-fH-4fL">
                                                             <rect key="frame" x="0.0" y="0.0" width="21.333333333333332" height="22"/>
@@ -1732,9 +1732,9 @@
                                                                 <color key="titleColor" systemColor="labelColor"/>
                                                             </state>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지도" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBa-R8-lsk">
-                                                            <rect key="frame" x="26.333333333333336" y="0.0" width="29.666666666666664" height="22"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 메뉴 QRCode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBa-R8-lsk">
+                                                            <rect key="frame" x="26.333333333333343" y="0.0" width="97" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -1747,7 +1747,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="7cD-Gs-ei0" kind="show" id="4nx-DL-PuF"/>
+                                            <segue destination="7cD-Gs-ei0" kind="presentation" id="4nx-DL-PuF"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell3" rowHeight="60" id="nKY-zc-7J7">
@@ -1758,7 +1758,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="BSH-bR-w3O">
-                                                    <rect key="frame" x="20" y="19" width="87" height="22"/>
+                                                    <rect key="frame" x="20" y="19" width="83.666666666666671" height="22"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuC-Ng-nMx">
                                                             <rect key="frame" x="0.0" y="0.0" width="21" height="22"/>
@@ -1767,8 +1767,8 @@
                                                             <state key="normal" image="line.3.horizontal" catalog="system"/>
                                                         </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="커뮤니티" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpx-LF-qgl">
-                                                            <rect key="frame" x="28" y="0.0" width="59" height="22"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <rect key="frame" x="27.999999999999996" y="0.0" width="55.666666666666657" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -1792,7 +1792,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1mI-dH-ZVl">
-                                                    <rect key="frame" x="20" y="19" width="70" height="22"/>
+                                                    <rect key="frame" x="20" y="19" width="67.333333333333329" height="22"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPh-pL-deg">
                                                             <rect key="frame" x="0.0" y="0.0" width="20.666666666666668" height="22"/>
@@ -1801,8 +1801,8 @@
                                                             <state key="normal" image="heart" catalog="system"/>
                                                         </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="찜목록" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RyU-4W-1se">
-                                                            <rect key="frame" x="25.666666666666661" y="0.0" width="44.333333333333343" height="22"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <rect key="frame" x="25.666666666666668" y="0.0" width="41.666666666666657" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -1907,59 +1907,44 @@
             </objects>
             <point key="canvasLocation" x="650.76923076923072" y="1402.6066350710901"/>
         </scene>
-        <!--Location View Controller-->
+        <!--Code View Controller-->
         <scene sceneID="clC-Xa-dVZ">
             <objects>
-                <viewController id="7cD-Gs-ei0" customClass="LocationViewController" customModule="Countries_miniPJ" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7cD-Gs-ei0" customClass="QRCodeViewController" customModule="Countries_miniPJ" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y23-nK-bUY">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tm4-Nx-zRm">
-                                <rect key="frame" x="-4" y="-12" width="400" height="782"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <standardMapConfiguration key="preferredConfiguration"/>
-                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ns2-3G-Kpg">
+                                <rect key="frame" x="0.0" y="647" width="390" height="48"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="QR Code를 스캔해주세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Suk-ty-rz1">
+                                        <rect key="frame" x="115" y="15" width="161" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3DB-vV-pz4"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ns2-3G-Kpg" firstAttribute="top" secondItem="3DB-vV-pz4" secondAttribute="top" constant="600" id="2Uv-en-ebu"/>
+                            <constraint firstItem="ns2-3G-Kpg" firstAttribute="leading" secondItem="3DB-vV-pz4" secondAttribute="leading" id="2WJ-eL-TD4"/>
+                            <constraint firstItem="3DB-vV-pz4" firstAttribute="trailing" secondItem="ns2-3G-Kpg" secondAttribute="trailing" id="XB8-T8-0vQ"/>
+                            <constraint firstItem="3DB-vV-pz4" firstAttribute="bottom" secondItem="ns2-3G-Kpg" secondAttribute="bottom" constant="92" id="Zae-EO-uYl"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4yn-a6-OWY">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="Txk-rd-tB4">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="gXU-2W-hYI">
-                                <rect key="frame" x="16" y="7.3333333333333339" width="54" height="29.666666666666664"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" subtitle="Back">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </backgroundConfiguration>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="actBack:" destination="7cD-Gs-ei0" eventType="touchUpInside" id="Nwy-g1-8Dt"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="iVd-U6-C91">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="MeC-se-SFM">
-                                <rect key="frame" x="296" y="7.3333333333333339" width="78" height="29.666666666666664"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="location" catalog="system" subtitle="내위치">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </backgroundConfiguration>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="actMyLocation:" destination="7cD-Gs-ei0" eventType="touchUpInside" id="jn7-Bi-xLh"/>
-                                </connections>
-                            </button>
+                        <barButtonItem key="leftBarButtonItem" id="CC4-32-SKW"/>
+                        <barButtonItem key="rightBarButtonItem" image="xmark.circle" catalog="system" id="ocJ-wI-oBm">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="mapView" destination="Tm4-Nx-zRm" id="1V0-dK-OTU"/>
+                        <outlet property="SecondView" destination="ns2-3G-Kpg" id="GEx-8L-G7K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WVJ-j4-ucE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2839,7 +2824,6 @@
         <image name="lakemcdonald" width="250" height="250"/>
         <image name="line.3.horizontal" catalog="system" width="128" height="65"/>
         <image name="line.3.horizontal.circle" catalog="system" width="128" height="123"/>
-        <image name="location" catalog="system" width="128" height="121"/>
         <image name="location.fill" catalog="system" width="128" height="119"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="map" catalog="system" width="128" height="112"/>
@@ -2856,6 +2840,7 @@
         <image name="ticket.fill" catalog="system" width="128" height="86"/>
         <image name="turtlerock" width="250" height="250"/>
         <image name="umbagog" width="250" height="250"/>
+        <image name="xmark.circle" catalog="system" width="128" height="123"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
