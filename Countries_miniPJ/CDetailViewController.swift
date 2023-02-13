@@ -12,6 +12,8 @@ class CDetailViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblDetail: UILabel!
+    @IBOutlet weak var lblSub: UILabel!
+    @IBOutlet weak var languageButton: UIButton!
     
     ////XML
     //    var country:[String:String]?
@@ -26,6 +28,8 @@ class CDetailViewController: UIViewController {
         super.viewDidLoad()
         
         indexImageAndLabel()
+        setLanguage()
+        Menu()
     }
     func indexImageAndLabel() {
         if let country = country {
@@ -39,6 +43,60 @@ class CDetailViewController: UIViewController {
         imageView.layer.cornerRadius = imageView.frame.width/8 //모서리 라운드처리
         imageView.clipsToBounds = true
         imageView.layer.borderColor = UIColor.clear.cgColor  //원형 이미지의 테두리 제거
+    }
+    
+    func setLanguage() {
+//        if let country = country {
+//            lblSub.text = String(format: NSLocalizedString("Text", comment: ""), "\(country.countryName)")
+//        }
+            //설정된 언어 코드 가져오기
+            let language = UserDefaults.standard.array(forKey: "AppleLanguages")?.first as! String // 초기에 "ko-KR" , "en-KR" 등으로 저장되어있음
+            let index = language.index(language.startIndex, offsetBy: 2)
+            let languageCode = String(language[..<index]) //"ko" , "en" 등
+            
+            //설정된 언어 파일 가져오기
+            let path = Bundle.main.path(forResource: languageCode, ofType: "lproj")
+            let bundle = Bundle(path: path!)
+            
+            lblSub.text = bundle?.localizedString(forKey: "Text", value: nil, table: nil)
+    }
+    func Menu() {
+        var menuItems: [UIAction] {
+            return [
+                UIAction(title: "한국어", image: UIImage(named: ""), handler: { (_) in
+                    self.languageButton.setImage(UIImage(systemName: ""), for: .normal)
+                    //한국어로 변경
+                    UserDefaults.standard.set(["ko"], forKey: "AppleLanguages")
+                            UserDefaults.standard.synchronize()
+                            
+                    //보통 메인화면으로 이동시켜줌
+                    self.setLanguage()
+                }),
+                UIAction(title: "영어", image: UIImage(named: ""), handler: { (_) in
+                    self.languageButton.setImage(UIImage(systemName: ""), for: .normal)
+                    //영어로 변경
+                    UserDefaults.standard.set(["en"], forKey: "AppleLanguages")
+                            UserDefaults.standard.synchronize()
+                            
+                    //보통 메인화면으로 이동시켜줌
+                    self.setLanguage()
+                }),
+                UIAction(title: "일본어", image: UIImage(named: ""), handler: { (_) in
+                    self.languageButton.setImage(UIImage(systemName: ""), for: .normal)
+                    //일본어로 변경
+                    UserDefaults.standard.set(["ja"], forKey: "AppleLanguages")
+                            UserDefaults.standard.synchronize()
+                            
+                    //보통 메인화면으로 이동시켜줌
+                    self.setLanguage()
+                })
+            ]
+        }
+        var demoMenu: UIMenu {
+            return UIMenu(title: "", image: nil, identifier: nil, options: [], children: menuItems)
+        }
+        languageButton.menu = demoMenu
+        languageButton.showsMenuAsPrimaryAction = true //짧게 눌러서 메뉴
     }
 
 //    }
