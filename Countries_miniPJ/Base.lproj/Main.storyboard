@@ -134,7 +134,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enP-uU-2EO">
-                                <rect key="frame" x="151" y="775" width="87.333333333333314" height="34.333333333333371"/>
+                                <rect key="frame" x="151" y="795" width="87.333333333333314" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="여행 경보">
                                     <backgroundConfiguration key="background">
@@ -148,7 +148,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0fo-GT-nlU">
-                                <rect key="frame" x="55" y="77" width="280" height="332.33333333333331"/>
+                                <rect key="frame" x="55" y="96.999999999999972" width="280" height="332.33333333333326"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fW6-7z-Ay0">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="55"/>
@@ -181,19 +181,22 @@
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFw-lr-w9V">
                                         <rect key="frame" x="0.0" y="295" width="280" height="37.333333333333314"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="280" id="Q8D-ju-0mv"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="language"/>
                                     </button>
                                 </subviews>
                             </stackView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9X-x0-yxc">
-                                <rect key="frame" x="0.0" y="419.33333333333326" width="390" height="325.66666666666674"/>
+                                <rect key="frame" x="0.0" y="439.33333333333326" width="390" height="325.66666666666674"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bag-qW-mZU">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="1825.6666666666667"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6A-Ck-TDf">
-                                                <rect key="frame" x="30" y="2" width="330" height="1500"/>
+                                                <rect key="frame" x="30" y="10" width="330" height="1500"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1500" id="5ya-cb-OgO"/>
                                                     <constraint firstAttribute="width" constant="330" id="ct1-gT-efj"/>
@@ -207,7 +210,7 @@
                                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="z6A-Ck-TDf" firstAttribute="leading" secondItem="Bag-qW-mZU" secondAttribute="leading" constant="30" id="5K0-5w-uo2"/>
-                                            <constraint firstItem="z6A-Ck-TDf" firstAttribute="top" secondItem="Bag-qW-mZU" secondAttribute="top" constant="2" id="Xox-KK-MrZ"/>
+                                            <constraint firstItem="z6A-Ck-TDf" firstAttribute="top" secondItem="Bag-qW-mZU" secondAttribute="top" constant="10" id="Xox-KK-MrZ"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -231,7 +234,7 @@
                             <constraint firstItem="q9X-x0-yxc" firstAttribute="top" secondItem="0fo-GT-nlU" secondAttribute="bottom" constant="10" id="Tah-9i-oZW"/>
                             <constraint firstItem="q9X-x0-yxc" firstAttribute="leading" secondItem="aN0-af-awB" secondAttribute="leading" id="Wc4-z0-ztP"/>
                             <constraint firstItem="0fo-GT-nlU" firstAttribute="leading" secondItem="aN0-af-awB" secondAttribute="leading" constant="55" id="WuM-Wd-wyF"/>
-                            <constraint firstItem="0fo-GT-nlU" firstAttribute="top" secondItem="aN0-af-awB" secondAttribute="top" constant="30" id="bzI-uA-t5D"/>
+                            <constraint firstItem="0fo-GT-nlU" firstAttribute="top" secondItem="aN0-af-awB" secondAttribute="top" constant="50" id="bzI-uA-t5D"/>
                             <constraint firstItem="enP-uU-2EO" firstAttribute="top" secondItem="q9X-x0-yxc" secondAttribute="bottom" constant="30" id="lgb-J2-kWv"/>
                             <constraint firstItem="aN0-af-awB" firstAttribute="bottom" secondItem="q9X-x0-yxc" secondAttribute="bottom" constant="100" id="s2g-jl-NUD"/>
                         </constraints>
@@ -432,7 +435,7 @@
                                                 <rect key="frame" x="350" y="8" width="40" height="34.333333333333485"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="k.square" catalog="system"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="mappin.square" catalog="system"/>
                                                 <connections>
                                                     <action selector="actKakaomap:" destination="y6D-9e-ceq" eventType="touchUpInside" id="WV3-va-s2X"/>
                                                 </connections>
@@ -2839,7 +2842,6 @@
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="icybay" width="250" height="250"/>
         <image name="info.square" catalog="system" width="128" height="114"/>
-        <image name="k.square" catalog="system" width="128" height="114"/>
         <image name="kakaoTalk" width="50" height="50"/>
         <image name="lakemcdonald" width="250" height="250"/>
         <image name="language" width="23.333333969116211" height="23.333333969116211"/>
@@ -2848,6 +2850,7 @@
         <image name="location.fill" catalog="system" width="128" height="119"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="map" catalog="system" width="128" height="112"/>
+        <image name="mappin.square" catalog="system" width="128" height="114"/>
         <image name="message.fill" catalog="system" width="128" height="114"/>
         <image name="person.circle" catalog="system" width="128" height="123"/>
         <image name="person.crop.circle.badge.plus" catalog="system" width="128" height="114"/>

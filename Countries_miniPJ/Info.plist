@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>kakaomap</string>
+		<string>kakaolink</string>
+		<string>facebook</string>
+	</array>
 	<key>NSCameraUsageDescription</key>
 	<string>카메라 권한 요청합니다.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>

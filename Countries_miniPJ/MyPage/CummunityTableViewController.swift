@@ -114,21 +114,21 @@ class CummunityTableViewController: UITableViewController {
             //만들어둔 URL 인스턴스를 열어줍니다.
             UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
         }
-        self.navigationController?.popViewController(animated: true)
+//        self.navigationController?.popViewController(animated: true)
     }
     @IBAction func actFacebook(_ sender: Any) {
         if let url = NSURL(string: "https://apps.apple.com/kr/app/facebook/id284882215"),
            UIApplication.shared.canOpenURL(url as URL) {
             UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
         }
-        self.navigationController?.popViewController(animated: true)
+//        self.navigationController?.popViewController(animated: true)
     }
     @IBAction func actSns(_ sender: Any) {
         if let url = NSURL(string: "sms://"),
            UIApplication.shared.canOpenURL(url as URL) {
             UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
         }
-        self.navigationController?.popViewController(animated: true)
+//        self.navigationController?.popViewController(animated: true)
     }
     
     /*
