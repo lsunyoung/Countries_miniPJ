@@ -115,13 +115,13 @@ class PopularityViewController: UIViewController, CLLocationManagerDelegate, MKM
     @IBAction func actKakaomap(_ sender: Any) {
         let lat:Double = country.latitude
         let lon:Double = country.longitude
-        let mylat:Double = 37.4921839765254
-        let mylon:Double = 127.03046988548856
+//        let mylat:Double = 37.4921839765254 //임의의 좌표
+//        let mylon:Double = 127.03046988548856
         
-        let alert = UIAlertController(title: "카카오맵", message: "카카오맵 길찾기 이동하시겠습니까?", preferredStyle: .alert)
+        let alert = UIAlertController(title: "GoogleMap", message: "GoogleMap 이동하시겠습니까?", preferredStyle: .alert)
         let action1 = UIAlertAction(title: "확인", style: .default) { _ in
-            //스키마로 외부 앱 실행(info에 Queried URL Schemes 앱(kakaomap) 추가)
-            if let openApp = URL(string: "kakaomap://route?sp=\(mylat),\(mylon)&ep=\(lat),\(lon)&by=CAR"), UIApplication.shared.canOpenURL(openApp) {
+            //스키마로 외부 앱 실행(info에 Queried URL Schemes 앱(Googlemap) 추가)
+            if let openApp = URL(string: "comgooglemaps://?center=\(lat),\(lon)&zoom=10&mapmode=standard"), UIApplication.shared.canOpenURL(openApp) {
                 UIApplication.shared.open(openApp, options: [:], completionHandler: nil)
             } else {
                 //앱 미설치시 앱스토어로 연결

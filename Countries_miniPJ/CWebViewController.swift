@@ -27,8 +27,10 @@ class CWebViewController: UIViewController {
     }
     
     @IBAction func actList(_ sender: Any) {
-        self.presentingViewController?.dismiss(animated: false, completion: nil)
-        self.presentingViewController?.dismiss(animated: true, completion: nil) //모달뷰 root 이동
+        self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil) //모달뷰 root 이동
+
+//        self.presentingViewController?.dismiss(animated: false, completion: nil)
+//        self.presentingViewController?.dismiss(animated: true, completion: nil) //모달뷰 root 이동
     }
     
     /*

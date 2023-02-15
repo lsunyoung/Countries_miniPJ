@@ -4,6 +4,7 @@
 <dict>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
+		<string>comgooglemaps</string>
 		<string>kakaomap</string>
 		<string>kakaolink</string>
 		<string>facebook</string>
