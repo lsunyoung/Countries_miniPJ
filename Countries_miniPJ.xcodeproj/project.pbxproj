@@ -80,7 +80,7 @@
 		298B1499290BA78600A02867 /* AirData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirData.swift; sourceTree = "<group>"; };
 		29931FA52984E4A00032ABE8 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		29931FA72984FDD90032ABE8 /* PopularityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularityViewController.swift; sourceTree = "<group>"; };
-		29CD5EBA291297DB0045C871 /* CummunityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CummunityTableViewController.swift; sourceTree = "<group>"; };
+		29CD5EBA291297DB0045C871 /* CummunityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = CummunityTableViewController.swift; sourceTree = "<group>"; };
 		29CD5EBC2912A2010045C871 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		29CD5EBE2912B4C50045C871 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		29D2C7CE2927C3A6002718CF /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };

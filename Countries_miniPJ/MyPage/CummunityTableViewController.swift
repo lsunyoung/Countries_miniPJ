@@ -27,6 +27,7 @@ class CummunityTableViewController: UITableViewController {
         targetPath()
         tableView.dataSource = self
     }
+    
     func targetPath() {
         let targetPath = getFilePath(fileName: "post.plist")
                 print("targetPath:\(targetPath)")
